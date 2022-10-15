@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #221F3A;
+
+ --page-max-width: 1200px;
+ 
+ --font-size-small-text: 16px;
+ --font-size-medium-text: 18px;
+ --font-size-big-text: 24px;
+ --font-size-medium-title: 40px;
+ --font-size-big-title: 56px;
+  
+}
