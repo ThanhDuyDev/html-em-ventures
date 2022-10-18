@@ -1,0 +1,130 @@
+.social-org {
+  margin: auto;
+  margin-top: var(--big-margin);
+  width: max-content;
+}
+
+.social-org .title {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.social-org > .title > h2 {
+  font-size: var(  --font-size-big-text);
+}
+
+.social-org > .title > h1 {
+  font-size: var(  --font-size-big-title);
+  margin-top: 16px;
+}
+
+.social-org > .title > p {
+  font-size: var(--font-size-20);
+  margin-top: 32px;
+}
+
+.org-list {
+  margin-top: var(--small-margin);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 54px 52px;
+}
+
+.org-item {
+  width: 400px;
+  height: 340px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 12px;
+  background-color: var(--color-dark-blue);
+  border-radius: 20px;
+  padding: 32px 16px;
+}
+
+.org-item > .img-wrap  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-item > .img-wrap > .title{
+  display: flex;
+  font-family: "Montserrat";
+  text-align: end;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.3);  
+}
+
+.org-item > .img-wrap > .title h1{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: var(--font-size-20);
+}
+
+.org-item > .img-wrap > .title  h1 > span{
+  font-weight: bold;
+}
+
+.org-item > .img-wrap > .title  p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.org-item > .img-wrap > .title  p > span {
+  font-weight: 300;
+  font-size: 6px;
+  line-height: 100%;
+}
+
+.org-item > .img-wrap > .title img {
+  width: 40px;
+  height: auto;
+  margin-left: 4px;
+}
+
+.org-item > .img-wrap > .icon-wrap {
+  height: 80px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.43px solid #FFFFFF;
+  background: linear-gradient(179.39deg, rgba(255, 255, 255, 0.5) -2.68%, rgba(34, 31, 31, 0) 139.8%);
+  border-radius: 4px;
+}
+
+.org-item > .text-wrap {
+  font-size: var(--font-size-medium-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.org-item > .text-wrap > .content {
+  color: white;
+  text-align: center;
+}
+
+.org-item .content > p:first-child {
+  font-weight: bold;
+}
+
+.org-item > .text-wrap .see-more{ 
+  display: flex;
+  align-items: center;
+  color: var(--color-pink);
+}
+
+.org-item > .text-wrap .see-more > * {
+  line-height: 100%;
+
+ }
+
+.org-item > .text-wrap .see-more i { 
+  font-size: 14px;
+  margin-left: 8px;
+}

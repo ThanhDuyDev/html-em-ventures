@@ -156,7 +156,6 @@ renderArticle(voice);
 renderArticle(payday);
 
 
-
 // console.log(trainningTemp);
 
 export function renderAll() {

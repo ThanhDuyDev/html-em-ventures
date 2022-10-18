@@ -1,3 +1,7 @@
+const articleCss = [
+  "../css/banner.css",
+]
+
 var newsData = [
   "../images/banner-reuse/banner-news1.png",
   "../images/banner-reuse/banner-news2.png",
@@ -10,7 +14,7 @@ var brandsData = [
   "../images/banner-reuse/banner-brand3.png",
 ]
 
-var bannerTemp =
+export var bannerTemp =
   `    <div class="banner">
 <div class="img-bg">
   <img src="../images/banner-reuse/banner-bg.png" alt=""/>
@@ -42,7 +46,7 @@ var bannerTemp =
   `
 
 function renderBannerNewsList(arr) {
-  temp = "";
+  var temp = "";
   arr.forEach(element => {
     temp +=
       `         <div class="news-item">
@@ -54,7 +58,7 @@ function renderBannerNewsList(arr) {
 }
 
 function renderBannerBrandsList(arr) {
-  temp = "";
+  var temp = "";
   arr.forEach(element => {
     temp += `       <div class="brand-item">
     <img src="${element}" alt="" width="180px" height="180px">
@@ -63,4 +67,5 @@ function renderBannerBrandsList(arr) {
   return temp;
 }
 
-document.querySelector(".banner").outerHTML = bannerTemp;
+
+importCss(articleCss);

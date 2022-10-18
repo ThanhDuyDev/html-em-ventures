@@ -3,14 +3,18 @@
   --color-dark-blue: #292452;
   --color-purple: #B147F8;
   --purple-grad: linear-gradient(267.74deg, #6359D9 -4.45%, #B147F8 105.31%);
-
+  --color-pink: #FB73A3;
+  
   --page-max-width: 1200px;
-  --big-margin: 80px;
+  --small-margin: 100px;
+  --big-margin: 200px;
   --input-height: 50px;
   --icon-edge: 35px;
 
+  --font-size-12: 12px;
   --font-size-small-text: 16px;
   --font-size-medium-text: 18px;
+  --font-size-20: 20px;
   --font-size-big-text: 24px;
   --font-size-small-title: 36px;
   --font-size-medium-title: 40px;
@@ -30,6 +34,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 body {

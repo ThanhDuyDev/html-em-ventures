@@ -13,25 +13,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <link rel="stylesheet" href="../css/default.css">
-  <link rel="stylesheet" href="../css/banner.css">
-
-
+  <link rel="stylesheet" href="../css/social-org.css">
 </head>
 
 <body>
   <div class="header">
   </div>
   <div class="page-container page-width">
-    <div class="banner">
-
-    </div>
+    <div class="banner"></div>
   </div>
-
+  <div class="social-org"></div>
+  <div class="page-container page-width">
+    
+  </div>
   <div class="footer">
   </div>
 </body>
 <script src="../js/HeaderFooter.js">
 </script>
-<script src="../js/Banner.js"></script>
+<script type="module">
+  import {bannerTemp} from "../js/Banner.js"
+  import {socialOrgTemp} from "../js/SocialOrg.js"
+  import {} from "../js/AboutUs.js"
+
+ 
+  document.querySelector(".banner").outerHTML = bannerTemp;
+  document.querySelector(".social-org").outerHTML = socialOrgTemp;
+</script>
 
 </html>
