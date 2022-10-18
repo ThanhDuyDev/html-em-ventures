@@ -1,7 +1,7 @@
 .footer {
-  max-width: var(--page-max-width);
   width: 100%;
-  margin: auto;
+  background-color: var(--color-dark-blue);
+  padding: 120px 0;
 }
 
 .footer-nav {

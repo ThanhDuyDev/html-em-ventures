@@ -1,0 +1,166 @@
+.banner {
+  position: relative;
+}
+
+.banner .img-bg {
+  position: absolute;
+  z-index: -1;
+  max-width: 80%;
+  top: 0;
+  right: 0;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+}
+
+.banner .img-bg img {
+  width: 100%;
+  height: auto;
+}
+
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text {
+  max-width: 50%;
+  color: white;
+}
+
+.banner-text > *{
+  margin-top: 22px;
+}
+
+.banner-text h1 {
+  font-size: var(--font-size-small-title);
+  font-family: "Montserrat";
+  line-height: 100%;
+}
+
+.banner-text > p {
+  font-size: var(--font-size-medium-text);
+  width: 72%;
+  text-align: justify;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.banner .joinem-btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 6px;
+  border-radius: 15px;
+  background-color: var(--color-purple);
+  border: none;
+}
+
+.banner .joinem-btn > *{
+  line-height: 100%;
+  font-size: var(--font-size-medium-text);
+  color: white;
+}
+
+.banner .joinem-btn > i{
+  margin-left: 16px;
+}
+
+.banner .explore-btn {
+  margin-left: 16px;
+  font-size: var(--font-size-medium-text);
+  padding: 20px;
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.banner .explore-btn > p{
+  line-height: 100%;
+}
+
+
+.banner-bottom {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-list {
+  display: flex;
+  margin-top: 32px;
+}
+
+.banner-news > h1 {
+  font-size: var(--font-size-big-text);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner .news-item + .news-item {
+  margin-left: 20px;
+}
+
+
+.banner .news-item {
+  position: relative;
+  width: 150px;
+  height: 180px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner .news-item img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .news-item p {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  margin: 0 20px 20px;  
+}
+
+.banner-brands {
+  display: flex;
+}
+
+.banner-brands .brand-item {
+  background: linear-gradient(24.94deg, #672C87 -1.3%, #2D2E79 100.42%);  height: 100%;
+  width: 180px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.banner-brands .brand-item + .brand-item {
+  margin-left: 22px;
+}
+
+.banner-brands .brand-item img {
+  max-width: 180px;
+  height: auto;
+}

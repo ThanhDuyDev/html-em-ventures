@@ -1,0 +1,110 @@
+.more-btn {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--color-bg);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  color: var(--color-purple);
+  padding: 16px 20px;
+}
+
+.more-btn::before {
+  content: "";
+  position: absolute;
+  background-image: var(--purple-grad);
+  inset: 0;
+  margin: -1px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.more-btn > * {
+  line-height: 100%;
+}
+
+
+.more-btn > i{
+  margin-left: 16px;
+  line-height: 100%;
+}
+
+.article-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.em-article {
+  height: 100%;
+  display: flex;
+  margin-top: var(--big-margin);
+}
+
+.em-article .img-wrap { 
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.em-article .img-wrap img{
+  max-width: 80%;
+  min-width: 60%;
+  height: auto;
+}
+
+.em-article .text-wrap {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.em-article .text-wrap .title {
+  text-transform: uppercase;
+}
+
+.em-article .title h1 {
+  font-size: var(--font-size-big-title);
+}
+
+.em-article .title h2 {
+  font-size: var(--font-size-medium-title);
+}
+
+.em-article .text-wrap ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.em-article > .text-wrap > * + * {
+  margin-top: 32px;
+  line-height: 140%;
+}
+
+
+.em-trainning, .em-retail, .em-voice {
+  flex-direction: row-reverse;
+}
+
+.em-trainning .img-wrap, .em-retail .img-wrap, .em-voice .img-wrap{ 
+  justify-content: flex-end;
+}
+
+
+
+/* EM-VENTURES */
+.em-ventures ul span {
+  font-weight: bold;
+}
+
+.em-ventures .highlight-text {
+  color: var(--color-purple);
+  font-weight: bold;
+}
+
+.em-ventures .text-wrap h1 {
+  font-size: 42px;
+}
