@@ -1,14 +1,18 @@
 :root {
   --color-bg: #221F3A;
+  --color-dark-blue: #292452;
+  --color-purple: #B147F8;
   --purple-grad: linear-gradient(267.74deg, #6359D9 -4.45%, #B147F8 105.31%);
 
   --page-max-width: 1200px;
+  --big-margin: 80px;
   --input-height: 50px;
   --icon-edge: 35px;
 
   --font-size-small-text: 16px;
   --font-size-medium-text: 18px;
   --font-size-big-text: 24px;
+  --font-size-small-title: 36px;
   --font-size-medium-title: 40px;
   --font-size-big-title: 56px;
 }
@@ -28,12 +32,28 @@ a {
   text-decoration: none;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, #9C68FF 0%, rgba(34, 31, 58, 1) 100%);
+  background-repeat: no-repeat;
+  background-color: var(--color-bg);
+  font-family: "Quicksand";
+
+}
+
 .desktop-hide {
   display: none;
 }
 
-body {
-  height: 100vh;
-  background: linear-gradient(180deg, #9C68FF 0%, rgba(34, 31, 58, 0) 119.91%);
-  background-color: var(--color-bg);
+.page-width {
+  max-width: var(--page-max-width);
+  width: 100%;
+  margin: auto;
+}
+
+.purple-grad {
+  background: var(--purple-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

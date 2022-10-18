@@ -2,7 +2,6 @@
 const cssData = [
   "../css/header.css",
   "../css/footer.css",
-
 ]
 
 const headerData = [{
@@ -147,7 +146,7 @@ function importCss(arr) {
 
 //  Template
 var headerTemp =
-  ` <div class="header">
+  ` <div class="header page-width">
   <a href="./home.html" class="header-logo">
     <img src="../images/logo.png" alt=""  width="160px" height="66px" >
   </a>
@@ -156,8 +155,9 @@ var headerTemp =
 
 var footerTemp =
   `<div class="footer">
-<div class="footer-nav">
-  <ul class="footer-nav-table">`
+<div class="footer-container page-width">
+  <div class="footer-nav">
+    <ul class="footer-nav-table">`
 
 // Function render
 function renderList(data, listCName, itemCName) {
