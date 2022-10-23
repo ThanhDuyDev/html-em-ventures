@@ -1,0 +1,73 @@
+.social-act {
+  margin-top: var(--big-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-act .title {
+  text-align: center;
+}
+
+.social-act .title > h2{
+  font-size: var(--font-size-big-text);
+  color: white;
+  text-transform: uppercase;
+}
+
+.social-act .title > h1{
+  font-size: var(--font-size-big-title);
+  text-transform: capitalize;
+}
+
+
+.social-act .list {
+  margin-top: var(--small-margin);
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+
+.social-act .list .column {
+  display: grid;
+  row-gap: 20px;
+}
+
+.social-act .list .column > * {
+  border-radius: 20px;
+  position: relative;
+}
+
+.social-act .list .column > * > img {
+  height: 100%;
+  width: 100%;
+}
+
+.social-act .list .column > * > .bottom {
+  width: 100%;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  background-color: #450095;
+  border-radius: 0 0 20px 20px;
+}
+
+.social-act .list .column > * > .bottom p {
+  text-align: start;
+  color: white;
+  font-size: var(--font-size-20);
+}
+
+
+.social-act .item {
+  height: 380px;
+}
+
+.social-act .small-item {
+  height: 280px;
+}
+
+.social-act .more-btn {
+  margin-top: 32px;
+}
+

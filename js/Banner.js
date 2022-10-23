@@ -1,4 +1,4 @@
-const articleCss = [
+const bannerCss = [
   "../css/banner.css",
 ]
 
@@ -49,7 +49,7 @@ function renderBannerNewsList(arr) {
   var temp = "";
   arr.forEach(element => {
     temp +=
-      `         <div class="news-item">
+    `<div class="news-item">
       <img src="${element}" alt="" width="150px" height="180px">
       <p>Là phụ nữ, làm thế nào ...</p>
     </div>`
@@ -60,12 +60,13 @@ function renderBannerNewsList(arr) {
 function renderBannerBrandsList(arr) {
   var temp = "";
   arr.forEach(element => {
-    temp += `       <div class="brand-item">
-    <img src="${element}" alt="" width="180px" height="180px">
-  </div>`
+    temp += 
+    `<div class="brand-item">
+      <img src="${element}" alt="" width="180px" height="180px">
+    </div>`
   });
   return temp;
 }
 
 
-importCss(articleCss);
+importCss(bannerCss);

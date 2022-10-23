@@ -1,0 +1,74 @@
+.signup {
+  margin-top: var(--big-margin);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  background: var(--color-dark-blue);
+  border-radius: 32px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  background-image: var(--purple-grad);
+  inset: 0;
+  margin: -1px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.signup > h1 {
+  text-align: center;
+  line-height: 120%;
+  font-size: var(--font-size-48);
+  width: 56%;
+}
+
+.signup > p {
+  font-size: var(--font-size-20);
+  margin-top: 24px;
+}
+
+.signup .signup-btn {
+  height: 56px;
+  background: var(--purple-grad);
+  padding: 0 25px;
+  width: max-content;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.signup > * {
+  line-height: 100%;
+}
+
+.signup .signup-btn > i {
+  font-size: 14px;
+  margin-left: 16px;
+}
+
+.signup > img {
+  height: var(--signup-patern-edge);
+  width: var(--signup-patern-edge);
+}
+
+.signup .left {
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  z-index: -1;
+  transform: scale(-1, 1);
+}
+
+.signup .right {
+  position: absolute;
+  right: -60px;
+  bottom: -12px;
+}

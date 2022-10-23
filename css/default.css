@@ -10,6 +10,8 @@
   --big-margin: 200px;
   --input-height: 50px;
   --icon-edge: 35px;
+  --icon-warp-edge: 64px;
+  --signup-patern-edge: 160px;
 
   --font-size-12: 12px;
   --font-size-small-text: 16px;
@@ -18,6 +20,7 @@
   --font-size-big-text: 24px;
   --font-size-small-title: 36px;
   --font-size-medium-title: 40px;
+  --font-size-48: 48px;
   --font-size-big-title: 56px;
 }
 
@@ -64,4 +67,39 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.more-btn {
+  width: 180px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--color-bg);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  color: var(--color-purple);
+  padding: 0 20px;
+}
+
+.more-btn::before {
+  content: "";
+  position: absolute;
+  background-image: var(--purple-grad);
+  inset: 0;
+  margin: -1px;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.more-btn > * {
+  line-height: 100%;
+}
+
+
+.more-btn > i{
+  margin-left: 16px;
+  line-height: 100%;
 }

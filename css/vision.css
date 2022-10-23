@@ -1,0 +1,102 @@
+.vision {
+  margin-top: var(--big-margin);
+}
+
+.vision > .title  {
+  color: white;
+  text-align: center;
+}
+
+.vision > .title > h1, .vision > .title > h2{
+  font-size: var(--font-size-medium-title);
+
+}
+
+.vision > .title > p {
+  font-size: var(--font-size-20)
+}
+
+.vision .see-more {
+  display: flex;
+  margin-top: 12px;
+  font-size: var(--font-size-medium-text);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.vision .see-more i{
+  font-size: 14px;
+  margin-left: 8px;
+  line-height: 140%;
+}
+
+
+.vision .content {
+  margin-top: var(--small-margin);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
+
+.vision .content > img{
+  width: 100%;
+  height: auto;
+}
+
+.vision .text-wrap .item {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+}
+
+.vision .text-wrap .item + .item{ 
+  margin-top: 48px;
+}
+
+
+.vision .item .item-img { 
+  width: var(--icon-warp-edge);
+  height: var(--icon-warp-edge);
+  border: 1px solid;
+  background: linear-gradient(217.93deg, #B147F8 4.06%, #6359D9 100.05%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.vision .item .item-text { 
+  text-align: justify;
+  color: white;
+}
+
+.vision .item .item-text h1 { 
+  font-size: var(--font-size-big-text);
+}
+
+.vision .item .item-text p { 
+  font-size: var(--font-size-medium-text);
+  margin-top: 20px;
+}
+
+.vision .bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.vision .bottom button{
+  width: 180px;
+  height: 56px;
+  border-radius: 15px;
+  background-color: var(--color-bg);
+}
+
+.vision .bottom button + button {
+  margin-left: 20px;
+}
+
+.vision .bottom .contact-btn {
+  color: white;
+  border: 1px solid white;
+}

@@ -1,5 +1,6 @@
 // Data
-const cssData = [
+const headerFooterCss = [
+  "../css/default.css",
   "../css/header.css",
   "../css/footer.css",
 ]
@@ -227,7 +228,7 @@ function renderFooter(arr) {
   document.querySelector(".footer").outerHTML = footerTemp;
 }
 
-importCss(cssData);
+importCss(headerFooterCss);
 renderHeader(headerData);
 renderFooter(footerData);
 

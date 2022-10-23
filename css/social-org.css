@@ -33,7 +33,7 @@
 
 .org-item {
   width: 400px;
-  height: 340px;
+  height: 346px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   row-gap: 12px;

@@ -1,37 +1,3 @@
-.more-btn {
-  width: max-content;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  background: var(--color-bg);
-  border: 1px solid transparent;
-  background-clip: padding-box;
-  position: relative;
-  color: var(--color-purple);
-  padding: 16px 20px;
-}
-
-.more-btn::before {
-  content: "";
-  position: absolute;
-  background-image: var(--purple-grad);
-  inset: 0;
-  margin: -1px;
-  border-radius: inherit;
-  z-index: -1;
-}
-
-.more-btn > * {
-  line-height: 100%;
-}
-
-
-.more-btn > i{
-  margin-left: 16px;
-  line-height: 100%;
-}
-
 .article-bottom {
   display: flex;
   justify-content: space-between;

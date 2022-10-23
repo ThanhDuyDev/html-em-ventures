@@ -1,0 +1,35 @@
+.inspire {
+  margin-top: var(--big-margin);
+}
+
+.inspire .title > *{
+  font-size: var(--font-size-medium-title);
+  text-align: center;
+  font-weight: bold;
+}
+
+.inspire .title > h2{ 
+  color: white;
+  margin-top: 8px;
+}
+
+.inspire .content {
+  margin-top: var(--small-margin);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 100px;
+  color: white;
+  text-align: justify;
+}
+
+.inspire .content > img {
+  width: 100%;
+  height: auto;
+}
+
+.inspire .content .text-wrap {
+  display: flex;
+  padding: 40px 0;
+  flex-direction: column;
+  justify-content: space-between;
+}

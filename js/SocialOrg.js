@@ -1,4 +1,7 @@
- 
+const socialOrgCss = [
+  "../css/social-org.css",
+]
+
 
 var socialOrgData = [
   {
@@ -50,6 +53,7 @@ export var socialOrgTemp =
   ${renderOrg(socialOrgData)}
 </div>
 </div>`
+
 function renderOrg(arr) {
   var temp = "";
   arr.forEach(element => {
@@ -84,3 +88,4 @@ function renderOrg(arr) {
   return temp;
 }
 
+importCss(socialOrgCss);
