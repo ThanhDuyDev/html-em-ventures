@@ -6,17 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us</title>
-<link rel="stylesheet" href="../css/signup.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@300;400;500;700&display=swap');
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
   <div class="header">
   </div>
-  <div class="page-width">
+  <div class="page-container page-width">
     <div class="banner"></div>
   </div>
   <div class="social-org"></div>
@@ -28,18 +23,7 @@
   <div class="partner"></div>
   <div class="page-width">
     <div class="social-act"></div>
-    <div class="signup">
-      <h1>TỰ CHỦ LÀ MỘT LỰA CHỌN ĐỂ HẠNH PHÚC HƠN</h1>
-      <p>Tham gia cùng EM-Ventures để nhận được những gía trị và lợi ích thiết thực nhất</p>
-      <div class="signup-btn">
-        <p>Đăng ký ngay</p>
-        <i class="fa-sharp fa-solid fa-arrow-right"></i>
-      </div>
-      <img src="../images/signup/signup-patern.png" 
-      class="left" alt="" width="160px" height="160px">
-      <img src="../images/signup/signup-patern.png" 
-      class="right" alt="" width="160px" height="160px">
-    </div>
+    <div class="signup"></div>
   </div>
   <div class="footer">
   </div>
@@ -54,7 +38,7 @@
   import { inspireTemp } from "../js/Inspire.js"
   import { partnerTemp } from "../js/Partner.js"
   import { socialActTemp } from "../js/SocialAct.js"
-
+  import { signupTemp } from "../js/renderTemp.js"
 
   document.querySelector(".banner").outerHTML = bannerTemp;
   document.querySelector(".social-org").outerHTML = socialOrgTemp;
@@ -63,7 +47,7 @@
   document.querySelector(".inspire").outerHTML = inspireTemp;
   document.querySelector(".partner").outerHTML = partnerTemp;
   document.querySelector(".social-act").outerHTML = socialActTemp;
-
+  document.querySelector(".signup").outerHTML = signupTemp;
 </script>
 
 </html>

@@ -19,8 +19,16 @@
   grid-template-columns: 2fr 1fr;
   column-gap: 100px;
   color: white;
+  font-size: var(--font-size-medium-text);
   text-align: justify;
 }
+
+.inspire .content p {
+  color: white;
+  font-size: var(--font-size-medium-text);
+  line-height: 120%;
+}
+
 
 .inspire .content > img {
   width: 100%;

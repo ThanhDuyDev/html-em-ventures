@@ -1,10 +1,19 @@
 .header {
-
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
   height: 72px;
+  background-color: #9362f0;
+}
+
+.header .header-container{
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .header-logo img {
   height: 40px;

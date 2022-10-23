@@ -59,8 +59,8 @@
   margin-top: 32px;
 }
 
-.partner .partner-column .item-wrap + .item-wrap{
-  margin-top: 20px;
+.partner .partner-column .item-wrap{
+  margin-bottom: 20px;
 }
 
 

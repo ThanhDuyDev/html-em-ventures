@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@300;400;500;700&display=swap');
+
 :root {
   --color-bg: #221F3A;
   --color-dark-blue: #292452;
@@ -49,7 +51,7 @@ body {
   background-repeat: no-repeat;
   background-color: var(--color-bg);
   font-family: "Quicksand";
-
+  position: relative;
 }
 
 .desktop-hide {
@@ -67,6 +69,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.page-container {
+  margin-top: 72px;
 }
 
 .more-btn {

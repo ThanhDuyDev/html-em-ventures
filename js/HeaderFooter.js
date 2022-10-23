@@ -3,6 +3,7 @@ const headerFooterCss = [
   "../css/default.css",
   "../css/header.css",
   "../css/footer.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css",
 ]
 
 const headerData = [{
@@ -147,63 +148,28 @@ function importCss(arr) {
 
 //  Template
 var headerTemp =
-  ` <div class="header page-width">
+  ` <div class="header">
+    <div class="header-container page-width">
   <a href="./home.html" class="header-logo">
     <img src="../images/logo.png" alt=""  width="160px" height="66px" >
   </a>
   <div class="header-nav">
-    <ul class="header-menu-list">`;
-
+    <ul class="header-menu-list">
+    ${renderHeader(headerData)}
+    </ul>
+  <button class="download-btn">
+    <p>tải app</p>
+  </button>
+  </div>
+  </div>`
+  
 var footerTemp =
   `<div class="footer">
 <div class="footer-container page-width">
   <div class="footer-nav">
-    <ul class="footer-nav-table">`
-
-// Function render
-function renderList(data, listCName, itemCName) {
-  var temp =
-      `<ul class="${listCName}">`;
-  data.forEach(element => {
-      temp += `<li class="${itemCName}"><a href="${element.link}">${element.name}</a></li>`
-  });
-  temp += "</ul>";
-  return temp;
-}
-
-function renderHeader(arr) {
-  arr.forEach((element) => {
-      if (element.subMenu !== "") {
-          headerTemp +=
-        `<li class="header-menu-item">
-          <p>${element.menuTitle} </p>
-          ${renderList(element.subMenu, "header-submenu-list desktop-hide", "header-submenu-item")}
-        </li>`;
-      } else {
-          headerTemp +=
-              `<li class="header-menu-item">
-      <p>${element.menuTitle} </p>
-      </li>`;
-      }
-  });
-  headerTemp +=
-  `</ul>
-  <button class="download-btn">
-    <p>tải app</p>
-  </button>`
-  document.querySelector(".header").outerHTML = headerTemp;
-}
-
-function renderFooter(arr) {
-  arr.forEach(element => {
-      footerTemp +=
-          `<li class="footer-nav-column">
-    <p>${element.title}</p>
-      ${renderList(element.nav, "", "")}
-    `
-  });
-  footerTemp +=
-  ` </ul>
+    <ul class="footer-nav-table">
+    ${renderFooter(footerData)}
+    </ul>
   <div class="get-noti">
     <h3>Nhận thông báo</h3>
     <div class="input-wrap">
@@ -225,10 +191,53 @@ function renderFooter(arr) {
       <i class="fa-brands fa-instagram"></i>
     </div>
   </div>`
-  document.querySelector(".footer").outerHTML = footerTemp;
+
+// Function render
+function renderList(data, listCName, itemCName) {
+  var temp =
+      `<ul class="${listCName}">`;
+  data.forEach(element => {
+      temp += `<li class="${itemCName}"><a href="${element.link}">${element.name}</a></li>`
+  });
+  temp += "</ul>";
+  return temp;
+}
+
+function renderHeader(arr) {
+  let str = '';
+  arr.forEach((element) => {
+      if (element.subMenu !== "") {
+          str +=
+        `<li class="header-menu-item">
+          <p>${element.menuTitle} </p>
+          ${renderList(element.subMenu, "header-submenu-list desktop-hide", "header-submenu-item")}
+        </li>`;
+      } else {
+          str +=
+              `<li class="header-menu-item">
+      <p>${element.menuTitle} </p>
+      </li>`;
+      }
+  });
+return str; 
+}
+
+function renderFooter(arr) {
+  let str = '';
+  arr.forEach(element => {
+    str +=
+          `<li class="footer-nav-column">
+    <p>${element.title}</p>
+      ${renderList(element.nav, "", "")}
+    `
+  });
+  return str;
 }
 
 importCss(headerFooterCss);
 renderHeader(headerData);
 renderFooter(footerData);
+
+document.querySelector(".header").outerHTML = headerTemp;
+document.querySelector(".footer").outerHTML = footerTemp;
 

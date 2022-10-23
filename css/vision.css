@@ -13,7 +13,9 @@
 }
 
 .vision > .title > p {
-  font-size: var(--font-size-20)
+  font-size: var(--font-size-20);
+  line-height: 140%;
+  margin-top: 18px;
 }
 
 .vision .see-more {

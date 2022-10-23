@@ -28,8 +28,7 @@ export let inspireTemp =
       </br>
       Từ chính cuộc sống mà Tôi muốn thuộc về.
       </br>
-      Cảm hứng không ở đâu xa. Nó từ chính Tôi.
-      ”
+      Cảm hứng không ở đâu xa. Nó từ chính Tôi.”
     </p>
     <div class="quote">
       <p><span class="bold">Nguyên Trần</span> - Founder, EM-Ventures
